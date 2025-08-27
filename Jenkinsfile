@@ -12,8 +12,8 @@ pipeline {
         }
         stage('Build Image') {
             steps {
-                //sh 'docker build -t tmvasanth/jenkinstest ./dockerimagebuild/' (this will use the tag latest)
-		sh 'docker build -t tmvasanth/jenkinstest:$BUILD_NUMBER ./dockerimagebuild/'
+                //sh 'docker build -t tmvasanth/jenkinstest ./dockerimagebuld/' (this will use the tag latest)
+		sh 'docker build -t tmvasanth/jenkinstest:$BUILD_NUMBER ./dockerimagebuld/'
             }
         }
         stage('Docker Login') {
